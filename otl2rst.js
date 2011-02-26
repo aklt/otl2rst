@@ -44,7 +44,6 @@ var reSplit = /[\r\n]+/g,
     reLength = re.length;
 
 process.argv.slice(2).forEach(function (filename) {
-    puts(filename);
     fs.readFile(filename, function (err, otl) {
         if (err) {
             throw err;
